@@ -82,7 +82,7 @@ export default {
               this.mostrarLogin();
             });
           } else {
-            console.log("Datos a entregar:", data);
+            // console.log("Datos a entregar:", data);
             this.$Swal.fire({
               icon: 'error',
               title: 'Error',

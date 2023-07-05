@@ -122,7 +122,7 @@ export default {
             this.$axios
                 .get('/crud/consultas/getObjetoOfertas.php')
                 .then((response) => {
-                    console.log(response.data); // Agrega esta línea
+                    console.log(response.data); 
                     this.ofertas = response.data;
                 })
                 .catch((error) => {

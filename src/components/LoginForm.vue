@@ -69,7 +69,7 @@ export default {
               title: 'Error',
               text: '¡Datos erróneos! Inténtalo nuevamente.'
             });
-            console.log("Datos a entregar:", data);
+            // console.log("Datos a entregar:", data);
           }
         })
         .catch(error => {
