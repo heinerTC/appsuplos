@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Staatliches&display=swap');
+
+:root {
+  /** Fonts **/
+  --fuente-principal: 'Raleway', sans-serif;
+  --fuente-headings: 'Staatliches', cursive;
+
+  /** Colors **/
+  --primario: #0011ff;
+  --gris-oscuro: #2f2e2e;
+  --gris-claro: #EBEBEB;
+  --blanco: #FFF;
+  --negro: #000;
+}
+
+body {
+  font-family: var(--fuente-principal);
+  font-size: 18px;
+  font-size: 1.3rem;
+  line-height: 2;
+}
+
+/** Headings **/
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: var(--fuente-headings);
+  margin: 0 0 5rem 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3.6rem;
+}
+
+h4 {
+  font-size: 2.4rem;
+}
+
+h5 {
+  font-size: 2rem;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  margin-top: 60px;
+  /* Ajusta el margen superior según el tamaño de tu encabezado */
+  margin-bottom: 60px;
+  /* Ajusta el margen inferior según el tamaño de tu pie de página */
+}
+
+/** Globales **/
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+hr {
+  border: 1px solid var(--gris-claro);
+}
+
+/* Botones del Menu */
+.col {
+  display: inline-block;
+}
+
+.card-body {
+  background: var(--blanco);
+}
+.size-card{
+  width: 30rem;
+}
+
+/* Tabs */
+.tabs-container {
+  background: var(--gris-claro);
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 25px;
+}
+
+.tabs {
+  display: flex;
+}
+
+.tabs li:not(:last-child) {
+  margin-right: 7px;
+}
+
+.tabs li a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  top: 4px;
+  padding: 10px 25px;
+  border-radius: 2px 2px 0 0;
+  background: var(--blanco);
+  opacity: 0.7;
+  transition: all 0.1s ease-in-out;
+}
+
+.tabs li.active a,
+.tabs li a:hover {
+  opacity: 1;
+  top: 0;
+}
+
+.tabs-content {
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  border-radius: 0 4px 4px 4px;
+  background: var(--blanco);
+}
+
+.tabs-panel {
+  display: none;
+}
+
+.tabs-panel.active {
+  display: block;
+}
+
+.content {
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+form {
+  margin-bottom: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.btn-agregar-contenido[disabled] {
+  opacity: 0.5;
+  pointer-events: none;
+}
