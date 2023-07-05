@@ -137,9 +137,9 @@ export default {
     fetchData(search) {
       this.offset = 0;
       this.loadMoreData(search);
-      console.log('offset:', this.offset);
-      console.log('limit:', this.limit);
-      console.log('nombre_producto:', search);
+      // console.log('offset:', this.offset);
+      // console.log('limit:', this.limit);
+      // console.log('nombre_producto:', search);
     },
     loadMoreData(search) {
       this.offset += this.limit;
@@ -207,19 +207,19 @@ export default {
         }
       }
       // Acceder a los datos del primer formulario
-      console.log("Datos del primer formulario:");
-      console.log(this.objeto);
-      console.log(this.descripcion);
-      console.log(this.moneda);
-      console.log(this.presupuesto);
-      console.log(this.actividadId);
+      // console.log("Datos del primer formulario:");
+      // console.log(this.objeto);
+      // console.log(this.descripcion);
+      // console.log(this.moneda);
+      // console.log(this.presupuesto);
+      // console.log(this.actividadId);
 
       // Acceder a los datos del segundo formulario
-      console.log("Datos del segundo formulario:");
-      console.log(this.fechaInicio);
-      console.log(this.horaInicio);
-      console.log(this.fechaCierre);
-      console.log(this.horaCierre);
+      // console.log("Datos del segundo formulario:");
+      // console.log(this.fechaInicio);
+      // console.log(this.horaInicio);
+      // console.log(this.fechaCierre);
+      // console.log(this.horaCierre);
 
       const camposIncompletos = camposRequeridos.filter((campo) => !this[campo]);
 
